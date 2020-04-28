@@ -1,9 +1,10 @@
+'use strict';
 //console.log('Hello World!');
 
 // Welcoming the user
 function welcomeName(){
   var userName = prompt('Please enter your name:');
-  document.getElementById('welcome-message').innerHTML = ('Welcome, <em>' + userName + '</em> I would like to share with you a little about myself.')
+  document.getElementById('welcome-message').innerHTML = ('Welcome, ' + userName + ' I would like to share with you a little about myself.')
 }
 
 // Flow control for questions where the correct answer is 'yes'
