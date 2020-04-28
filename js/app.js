@@ -3,7 +3,7 @@
 // Welcoming the user
 function welcomeName(){
   var userName = prompt('Please enter your name:');
-  document.getElementById('welcome-message').innerHTML = ('Welcome, ' + userName + ' I would like to share with you a little about myself.')
+  document.getElementById('welcome-message').innerHTML = ('Welcome, <em>' + userName + '</em> I would like to share with you a little about myself.')
 }
 
 // Flow control for questions where the correct answer is 'yes'
@@ -30,12 +30,12 @@ function noIsCorrect(answer){
 
 //Alert function when the answer is correct
 function correct(){
-  return alert('You are correct!')
+  return alert('You are correct!');
 }
 
 //Alert function where the answer is incorrect
 function incorrect(){
-  return alert('Sorry, you are incorrect.')
+  return alert('Sorry, you are incorrect.');
 }
 
 // The guessing game
