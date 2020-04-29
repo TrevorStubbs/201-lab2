@@ -36,7 +36,7 @@
 ## Requirements:
 
 1. Create a top 10 in an `<ol>` -
-1. Take all the code out of the functions
+1. Take all the code out of the functions -
 1. Add a 6th question:
     - Guess a number
     - Respond with too high or too low
@@ -64,9 +64,9 @@
     - What observations or questions do you have about what you've learned?
     - How long did it take you to complete this assignment? How long did you think it was going to take
 
-30min to make the `<ol>`
-1 hour to refactor into non functions
-30 min to make the guessing game
+30min to make the `<ol>`-
+1 hour to refactor into non functions-
+30 min to make the guessing game-
 1 hour to make the 7th question
 30min for final score.
 
