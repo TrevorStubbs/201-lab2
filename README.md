@@ -31,3 +31,43 @@
     - What observations or questions do you have about what you've learned so far?
     - How long did it take you to complete this assignment? And before you started, how long did you think it would take you to complete this assignment
         - I think 1.5 hours. Plan to be done by 3pm
+
+# Lab03:
+## Requirements:
+
+1. Create a top 10 in an `<ol>` -
+1. Take all the code out of the functions
+1. Add a 6th question:
+    - Guess a number
+    - Respond with too high or too low
+    - limit the guesses to 4 tries
+    - If not correct tell the user the answer
+1. Add a 7th question:
+    - A question with multiple correct answers
+    - Give the user 6 attempts to a correct answer
+    - Display all the possible answers to the user
+    - Array
+1. Setup a final score for the user. 
+
+- Continue to use console.logs
+- No functions or helper methods
+
+### Stretch Goals
+- Attempt to make the code more DRY by putting all the questions and answers and responses of the first 5 y/n questions into arrays.
+- Modify the logic such that a 'for' loop will control the flow from question to question
+- make the number guessing game use a random number.
+
+### Submission Requirements
+- Submit github link
+- add to the comments
+    - How did this go?
+    - What observations or questions do you have about what you've learned?
+    - How long did it take you to complete this assignment? How long did you think it was going to take
+
+30min to make the `<ol>`
+1 hour to refactor into non functions
+30 min to make the guessing game
+1 hour to make the 7th question
+30min for final score.
+
+3.5hour. Should be done by 4pm.
