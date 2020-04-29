@@ -10,10 +10,10 @@ function welcomeName(){
 // Flow control for questions where the correct answer is 'yes'
 function yesIsCorrect(answer){
   if(answer === 'yes' || answer === 'y'){
-    //console.log('correct');
+    // console.log('correct');
     correct();
   } else {
-    //console.log('incorrect');
+    // console.log('incorrect');
     incorrect();
   }
 }
