@@ -37,11 +37,11 @@
 
 1. Create a top 10 in an `<ol>` -
 1. Take all the code out of the functions -
-1. Add a 6th question:
-    - Guess a number
-    - Respond with too high or too low
-    - limit the guesses to 4 tries
-    - If not correct tell the user the answer
+1. Add a 6th question: -
+    - Guess a number -
+    - TODO Respond with too high or too low
+    - limit the guesses to 4 tries -
+    - If not correct tell the user the answer -
 1. Add a 7th question:
     - A question with multiple correct answers
     - Give the user 6 attempts to a correct answer
@@ -70,4 +70,6 @@
 1 hour to make the 7th question
 30min for final score.
 
-3.5hour. Should be done by 4pm.
+3.5 Should be done by 4pm.
+I am finished at 3.15
+
