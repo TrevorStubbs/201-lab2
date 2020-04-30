@@ -10,18 +10,21 @@ function welcomeUser(){
 // Activated by the guessingGame Button
 // Linter isn't happy but this function is being called by the even listener in the HTML.
 function guessGame(){
+  // variable to collect correct answers.
   var userScore = 0;
+  // array to hold correct and incorrect.
+  var correctArray = ['correct', 'incorrect'];
 
   // 1st y/n question
   function firstQuestion(){
     var questionOne = prompt('Do I want to retire by 60?').toLowerCase();
     if(questionOne === 'no' || questionOne === 'n'){
       // console.log('correct');
-      alert('You are correct!');
+      alert('You are ' + correct() + '!');
       userScore++;
     } else {
       // console.log('incorrect');
-      alert('Sorry, you are incorrect.');
+      alert('Sorry, you are ' + incorrect() + '.');
     }
   }
 
@@ -30,11 +33,11 @@ function guessGame(){
     var questionTwo = prompt('Am I a captain at an airline?').toLowerCase();
     if(questionTwo === 'yes' || questionTwo === 'y'){
       // console.log('correct');
-      alert('You are correct!');
+      alert('You are ' + correct() + '!');
       userScore++;
     } else {
       // console.log('incorrect');
-      alert('Sorry, you are incorrect.');
+      alert('Sorry, you are ' + incorrect() + '.');
     }
   }
 
@@ -43,11 +46,11 @@ function guessGame(){
     var questionThree = prompt('Do I want to race sailboats?').toLowerCase();
     if(questionThree === 'yes' || questionThree === 'y'){
       // console.log('correct');
-      alert('You are correct!');
+      alert('You are ' + correct() + '!');
       userScore++;
     } else {
       // console.log('incorrect');
-      alert('Sorry, you are incorrect.');
+      alert('Sorry, you are ' + incorrect() + '.');
     }
   }
 
@@ -56,11 +59,11 @@ function guessGame(){
     var questionFour = prompt('Was I a flight instructor?').toLowerCase();
     if(questionFour === 'yes' || questionFour === 'y'){
       // console.log('correct');
-      alert('You are correct!');
+      alert('You are ' + correct() + '!');
       userScore++;
     } else {
       // console.log('incorrect');
-      alert('Sorry, you are incorrect.');
+      alert('Sorry, you are ' + incorrect() + '.');
     }
   }
 
@@ -70,11 +73,11 @@ function guessGame(){
     ();
     if(questionFive === 'no' || questionFive === 'n'){
       // console.log('correct');
-      alert('You are correct!');
+      alert('You are ' + correct() + '!');
       userScore++;
     } else {
       // console.log('incorrect');
-      alert('Sorry, you are incorrect.');
+      alert('Sorry, you are ' + incorrect() + '.');
     }
   }
 
@@ -147,6 +150,13 @@ function guessGame(){
     }
   }
 
+  function correct(){
+    return correctArray[0];
+  }
+
+  function incorrect(){
+    return correctArray[1];
+  }
   // calling the questions.
   firstQuestion();
   secondQuestion();
