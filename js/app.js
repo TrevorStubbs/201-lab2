@@ -6,10 +6,11 @@ var userName = prompt('Please enter your name:');
 document.getElementById('welcome-message').innerHTML = ('Welcome, ' + userName + ' I would like to share with you a little about myself.');
 
 // Activated by the guessingGame Button
+// Linter isn't happy but this function is being called by the even listener in the HTML.
 function guessGame(){
   var userScore = 0;
 
-  // 1st y/n question  
+  // 1st y/n question
   var questionOne = prompt('Do I want to retire by 60?').toLowerCase();
   if(questionOne === 'no' || questionOne === 'n'){
     // console.log('correct');
@@ -119,7 +120,6 @@ function guessGame(){
     if(correctGuess === true){
       break;
     }
-
   }
 
   // If the guess was not correct then give the user the answers.
