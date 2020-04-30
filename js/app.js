@@ -18,70 +18,33 @@ function guessGame(){
   // 1st y/n question
   function firstQuestion(){
     var questionOne = prompt('Do I want to retire by 60?').toLowerCase();
-    if(questionOne === 'no' || questionOne === 'n'){
-      // console.log('correct');
-      alert('You are ' + correct() + '!');
-      userScore++;
-    } else {
-      // console.log('incorrect');
-      alert('Sorry, you are ' + incorrect() + '.');
-    }
+    noIsCorrect(questionOne);
   }
 
   // 2nd y/n question
   function secondQuestion(){
     var questionTwo = prompt('Am I a captain at an airline?').toLowerCase();
-    if(questionTwo === 'yes' || questionTwo === 'y'){
-      // console.log('correct');
-      alert('You are ' + correct() + '!');
-      userScore++;
-    } else {
-      // console.log('incorrect');
-      alert('Sorry, you are ' + incorrect() + '.');
-    }
+    yesIsCorrect(questionTwo);
   }
 
   // 3rd y/n question
   function thirdQuestion(){
     var questionThree = prompt('Do I want to race sailboats?').toLowerCase();
-    if(questionThree === 'yes' || questionThree === 'y'){
-      // console.log('correct');
-      alert('You are ' + correct() + '!');
-      userScore++;
-    } else {
-      // console.log('incorrect');
-      alert('Sorry, you are ' + incorrect() + '.');
-    }
+    yesIsCorrect(questionThree);
   }
 
   // 4th y/n question
   function fourthQuestion(){
     var questionFour = prompt('Was I a flight instructor?').toLowerCase();
-    if(questionFour === 'yes' || questionFour === 'y'){
-      // console.log('correct');
-      alert('You are ' + correct() + '!');
-      userScore++;
-    } else {
-      // console.log('incorrect');
-      alert('Sorry, you are ' + incorrect() + '.');
-    }
+    yesIsCorrect(questionFour);
   }
 
   // 5th y/n question
   function fifthQuestion(){
     var questionFive = prompt('Do I have a gap in my work experience?').toLowerCase
     ();
-    if(questionFive === 'no' || questionFive === 'n'){
-      // console.log('correct');
-      alert('You are ' + correct() + '!');
-      userScore++;
-    } else {
-      // console.log('incorrect');
-      alert('Sorry, you are ' + incorrect() + '.');
-    }
+    noIsCorrect(questionFive);
   }
-
-
 
   // Variables to set up the number guessing game
   function numberGuess(){
@@ -108,15 +71,13 @@ function guessGame(){
         }
       }
     }
+
     // Make this alert if the user didn't get the answer correct
     if(correctGuess === false){
       //console.log('incorrect');
       alert('The number was ' + number + '.');
     }
   }
-
- 
-
 
   //Setup variables for the fill in the blank question
   function planeQuestion(){
@@ -150,13 +111,40 @@ function guessGame(){
     }
   }
 
+  // function logic for yes
+  function yesIsCorrect(answer){
+    if(answer === 'yes' || answer === 'y'){
+      // console.log('correct');
+      alert('You are ' + correct() + '!');
+      userScore++;
+    } else {
+      // console.log('incorrect');
+      alert('Sorry, you are ' + incorrect() + '.');
+    }
+  }
+  
+  // function logic for no
+  function noIsCorrect(answer){
+    if(answer === 'no' || answer === 'n'){
+      // console.log('correct');
+      alert('You are ' + correct() + '!');
+      userScore++;
+    } else {
+      // console.log('incorrect');
+      alert('Sorry, you are ' + incorrect() + '.');
+    }
+  }
+
+  // function to call correct
   function correct(){
     return correctArray[0];
   }
 
+  // funtion to call incorrect
   function incorrect(){
     return correctArray[1];
   }
+
   // calling the questions.
   firstQuestion();
   secondQuestion();
