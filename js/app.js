@@ -51,12 +51,12 @@ function guessGame(){
     var number = Math.floor(Math.random() * 10) + 1;
     var userGuess = 0;
     var correctGuess = false;
-  
+
     alert('I will give you 4 tries to guess a number between 1 and 10.');
-  
+
     for(var i = 4; i >= 1; i--){
       userGuess = Number(prompt('You have ' + i + ' tries left. Please make a guess: '));
-  
+
       if(userGuess === number){
         //console.log('correct');
         alert('That\'s it! I was thinking of ' + number + '.');
@@ -84,11 +84,11 @@ function guessGame(){
     var answerArray = ['cessna', 'beechcraft', 'bombardier', 'embraer', 'piper'];
     var correctGuess = false;
     alert('I will give you 6 attempts to guess a make of airplane that I have flown');
-  
+
     //outer for loop to limit the number of guess by the user
     for(var j = 6; j >= 1; j--){
       var arrayGuess = prompt('You have ' + j + ' more attempts. What have I flown?').toLowerCase();
-  
+
       //inner for loop to iterate through the array to check to see if the guess matches an answer
       for(var n = 0; n < answerArray.length; n++){
         if(arrayGuess === answerArray[n]){
@@ -98,13 +98,13 @@ function guessGame(){
           break;
         }
       }
-  
+
       //break out of the outer loop if a guess was correct.
       if(correctGuess === true){
         break;
       }
     }
-  
+
     // If the guess was not correct then give the user the answers.
     if(correctGuess === false){
       alert('I am sorry you did not guess any correctly. The possible answers were: ' + answerArray[0] + ', ' + answerArray[1] + ', ' + answerArray[2] + ', ' + answerArray[3] + ', ' + 'and ' + answerArray[4] + '.');
@@ -122,7 +122,7 @@ function guessGame(){
       alert('Sorry, you are ' + incorrect() + '.');
     }
   }
-  
+
   // function logic for no
   function noIsCorrect(answer){
     if(answer === 'no' || answer === 'n'){
@@ -140,7 +140,7 @@ function guessGame(){
     return correctArray[0];
   }
 
-  // funtion to call incorrect
+  // function to call incorrect
   function incorrect(){
     return correctArray[1];
   }

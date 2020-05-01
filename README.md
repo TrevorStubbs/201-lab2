@@ -74,14 +74,19 @@
 I am finished at 3.15
 
 # Lab 04
+
 ## Requirements:
 1. Get code into drivers computer
 1. Separate the into functions (7 functions)
 1. README.md we Driver and Navigator's names
 1. pull request
 
-Stetch
+Stretch
 1. Create 3 arrays.  1 for each question, an array for correct answers, an array for 2 possible resonses. ('Yup' 'Yuppers')
 1. DRY- make a for loop to iterate through the arrays. And call the function for each question.
-1. Code Review: Explore each othere CSS. Make suggestions for each other
+1. Code Review: Explore each other CSS. Make suggestions for each other
 1. Improve accessibility: achieving better scores and attach it to readme.md
+
+
+> Navigator: Trevor Stubbs
+> Driver: Amber Falbo
