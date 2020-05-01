@@ -1,3 +1,9 @@
+> Navigator: Trevor Stubbs
+> Driver: Amber Falbo
+
+![Accessibility Contrast Checks](Photos/lab5contrastchecks.png)
+![Accessibility Score](Photos/lab5accessibilityscores.png)
+
 # Lab02: - About Me, with a guessing game
 ## Lab requirements
 1. User would like to learn about me so they can know me better
@@ -87,6 +93,3 @@ Stretch
 1. Code Review: Explore each other CSS. Make suggestions for each other
 1. Improve accessibility: achieving better scores and attach it to readme.md
 
-
-> Navigator: Trevor Stubbs
-> Driver: Amber Falbo
