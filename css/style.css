@@ -1,7 +1,7 @@
 body{
   background-color: rgb(169, 199, 255);
   color: rgb(17, 15, 2);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Kanit', sans-serif;
   margin: 10px;
   margin-left: 40px;
   margin-right: 40px;  
@@ -61,6 +61,7 @@ div {
   margin: auto;
   display: inline;
   margin: 10px;  
+  margin-left: 0px;
 }
 
 section {
@@ -81,6 +82,10 @@ img {
   text-align: center;
   display: inline-block;
   margin-bottom: 5px;
+}
+
+#main-section{
+  padding-left: 80px;
 }
 
 #welcome-message {
