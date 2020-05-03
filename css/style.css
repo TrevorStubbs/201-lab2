@@ -42,9 +42,11 @@ p {
 }
 
 ul {
+  list-style-position: inside;
   list-style-type: disc;
   margin-left: 20px;
   padding: 5px;
+  background-color: blue;
 }
 
 ol {
